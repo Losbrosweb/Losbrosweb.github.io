@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #caja-texto {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        #boton {
+            padding: 5px 10px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ingrese el Usuario y contraseña</h1>
+  
+
+    <form id="formulario">
+        <input type="text" id="usuario" placeholder="Usuario">
+        <input type="password" id="contrasena" placeholder="Contraseña">
+        <button id="boton">Ingresar</button>
+   
+    <div id="resultado"></div>
+
+    <script>
+        const formulario = document.getElementById('formulario');
+        const usuario = document.getElementById('usuario');
+        const contrasena = document.getElementById('contrasena');
+        const boton = document.getElementById('boton');
+        const resultado = document.getElementById('resultado');
+
+        const credenciales = {
+            usuario: "p3rs00n4s", // Reemplazar con el usuario correcto
+            contrasena: "S3r14ss." // Reemplazar con la contraseña correcta
+        };
+
+        const paginaDestino = "Home.html"; // Reemplazar con la URL de la página destino
+        const paginaAlternativa = "404.html"; // Reemplazar con la URL de la página alternativa
+
+        boton.addEventListener('click', () => {
+            const usuarioIntroducido = usuario.value.trim().toLowerCase();
+            const contrasenaIntroducida = contrasena.value.trim();
+
+            if (usuarioIntroducido === credenciales.usuario && contrasenaIntroducida === credenciales.contrasena) {
+                resultado.textContent = `Redireccionando a: ${paginaDestino}`;
+                window.location.href = paginaDestino;
+            } else {
+                resultado.textContent = "Credenciales incorrectas.";
+                window.location.href = paginaAlternativa;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease;    
+    font-size: 20px;
+    
+   }
+   
+
+   
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.micro {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  }
+ 
+ .microhead {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400; 
+  font-style: normal;
+  position: relative;
+  font-size: 220%;
+  color: #fff;
+  
+  }
+ 
+ .microh2 {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  font-size: 220%;
+  color: #fff ;
+  
+  }
+  
+.lnk {
+   border-radius: 20px;
+   width: 100%;
+   height: 40px;
+   padding: 2px;
+   border-color: transparent;2~£/*  */
+   background: #fff;
+   font-family:"Micro 5", sans-sarif ;
+   color: #0f0f0f;
+   font-size: 180%;
+   
+}
+
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotatey(0deg);
+    box-shadow: transparent;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #0f0f0f;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: #0f0f0f;
+    text-align: center;
+  /*font*/
+   font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200%;
+  
+}
+
+.card .back {
+    transform: perspective(600px) rotatey(180deg);
+    background: #0f0f0f;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: transparent;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+     font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200%;
+  
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotatey(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotatey(360deg);
+}
+
+
+.pie {
+   width: 100%;
+   padding: 30px;
+   border-radius: 25px;
+   background-color: #000;
+   text-align: center;
+   color: white;   
+}
+
+.pie2 {
+   width: 100%;
+   padding: 30px;
+   border-radius: 25px;
+   background-color: #000;
+   text-align: center;
+   color: white;  
+   margin: 20px auto; 
+   margin-right:20px;
+   margin-left:20px;
+}
+
+.pieh {
+   font-family: "Micro 5", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+  font-size: 220%;
+  text-align: center;
+  color: white;
+  
+}
+
+.piei {
+   width: 200px;
+   border-radius: 15px;
+   }
+ 
+ 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.destacados {
+    width: 45%;
+    text-align: center;
+    margin-bottom: 20px;   
+}
+
+.destacados h2 {
+    font-family:"Micro 5",Sans-Sarif;
+    font-weight: 600;
+    font-size: 250%;
+}
+
+.destacados img {
+    width: 100%;
+    border-radius:8%;
+}
+
+.destacados a {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-family:"Micro 5",Sans-Sarif;
+    font-weight: 400;
+    font-size: 180%;
+    border-radius: 50px;
+   
+    
+}
+
